@@ -1,0 +1,12 @@
+//custom editor settings
+{
+	//default tab spacing
+	"editor.tabSize": 4,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": false,
+    "search.exclude": {
+        "**/build": true,
+        "**/coverage": true,
+        "**/node_modules": true
+    }
+}
