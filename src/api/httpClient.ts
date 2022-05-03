@@ -80,6 +80,7 @@ class Http {
                 getOauthToken(getOauthTokenOptions).then(response => {
                     localStorage.setItem('authToken', response.data.access_token)
                 })
+                //Should have logic to kick user out and force a new login
                 break
             }
             case StatusCode.InternalServerError: {

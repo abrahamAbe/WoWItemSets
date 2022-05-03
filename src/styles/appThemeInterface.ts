@@ -4,12 +4,19 @@ import 'styled-components'
 declare module 'styled-components' {
     export interface DefaultTheme {
         colors: {
-            screenBackground: string,
-            white: string
+            darkGray: string,
+            lightGray: string,
+            black: string,
+            white: string,
+            blue: string,
+            lightBlue: string,
+            overlayBlue: string
         }
         dimensions: {
             screenWidth: string,
             screenPadding: string,
+            //responsive
+            mobileLg: string
         }
     }
 }

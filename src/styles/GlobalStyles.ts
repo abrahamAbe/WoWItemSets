@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0 auto;
     }
     body{
-        background-color: #1A1C23
+        background-color: #1A1C23;
     }
 `
 
