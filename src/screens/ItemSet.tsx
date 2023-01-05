@@ -98,7 +98,6 @@ const ItemSet:React.FC = () => {
 
                     <Section alignCenter={ true }>
                         <SectionTitle>Effects</SectionTitle>
-
                         {
                             itemSet.effects.map((itemSet, index) =>
                                 <ItemSetEffect key={ index }>{ itemSet.display_string }</ItemSetEffect>

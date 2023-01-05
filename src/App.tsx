@@ -76,7 +76,7 @@ const App:React.FC = () => {
 
             <Header></Header>
 
-            <AppContent>
+            <AppContent> 
                 
                 <Search search={ search } paginate={ paginate }></Search>
                 

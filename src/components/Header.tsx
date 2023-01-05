@@ -3,6 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import orc from '../assets/orc.jpg'
 
+//litElement
+import './page-title'
+import reactifyWc from 'reactify-wc'
+
+const PageTitle = reactifyWc('page-title')
+
 const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -38,7 +44,7 @@ const Header:React.FC = () => {
         <HeaderContainer>
             <HeaderContent>
                 <Image src={ orc } onClick={ () => navigate('/') }/>
-                World of Warcraft Item Sets
+                <PageTitle></PageTitle>
             </HeaderContent>
         </HeaderContainer>
     )
