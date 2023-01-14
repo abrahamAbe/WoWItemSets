@@ -105,38 +105,38 @@ const SetItem:React.FC = () => {
                         <SectionContent>
                             <SectionTitle>Item Details</SectionTitle>
                             {
-                                setItem.preview_item.quality ? <SetItemText>Quality: { setItem.preview_item.quality.name }</SetItemText> : <></>  
+                                setItem.preview_item.quality && <SetItemText>Quality: { setItem.preview_item.quality.name }</SetItemText>  
                             }
                             {
-                                setItem.preview_item.level ? <SetItemText>{ setItem.preview_item.level.display_string }</SetItemText> : <></>  
+                                setItem.preview_item.level && <SetItemText>{ setItem.preview_item.level.display_string }</SetItemText>
                             }
                             {
-                                setItem.preview_item.requirements ? <SetItemText>{ setItem.preview_item.requirements.level.display_string }</SetItemText> : <></>
+                                setItem.preview_item.requirements && <SetItemText>{ setItem.preview_item.requirements.level.display_string }</SetItemText>
                             }
                             {
-                                setItem.preview_item.item_class ? <SetItemText>Class: { setItem.preview_item.item_class.name }</SetItemText> : <></>
+                                setItem.preview_item.item_class && <SetItemText>Class: { setItem.preview_item.item_class.name }</SetItemText>
                             }
                             {
-                                setItem.preview_item.item_subclass ? <SetItemText>Sub Class: { setItem.preview_item.item_subclass.name }</SetItemText> : <></>
+                                setItem.preview_item.item_subclass && <SetItemText>Sub Class: { setItem.preview_item.item_subclass.name }</SetItemText>
                             }
                             {
-                                setItem.preview_item.inventory_type ? <SetItemText>Inventory Type: { setItem.preview_item.inventory_type.name }</SetItemText> : <></>
+                                setItem.preview_item.inventory_type && <SetItemText>Inventory Type: { setItem.preview_item.inventory_type.name }</SetItemText>
                             }
                             {
-                                setItem.preview_item.durability ? <SetItemText>{ setItem.preview_item.durability.display_string }</SetItemText> : <></>
+                                setItem.preview_item.durability && <SetItemText>{ setItem.preview_item.durability.display_string }</SetItemText>
                             }
                             {  
-                                setItem.preview_item.armor ? <SetItemColoredText colorObject={ setItem.preview_item.armor.display.color }>{ setItem.preview_item.armor.display.display_string }</SetItemColoredText> : <></>
+                                setItem.preview_item.armor && <SetItemColoredText colorObject={ setItem.preview_item.armor.display.color }>{ setItem.preview_item.armor.display.display_string }</SetItemColoredText>
                             }
                         </SectionContent>
 
                         <SectionContent>
                             <SectionTitle>Item Value</SectionTitle>
                             {
-                                setItem.purchase_price ? <SetItemText>Purchase price: { setItem.purchase_price }</SetItemText> : <></>
+                                setItem.purchase_price && <SetItemText>Purchase price: { setItem.purchase_price }</SetItemText>
                             }
                             {
-                                setItem.sell_price ? <SetItemText>Sell price: { setItem.sell_price }</SetItemText> : <></>
+                                setItem.sell_price && <SetItemText>Sell price: { setItem.sell_price }</SetItemText>
                             }
                         </SectionContent>
 
